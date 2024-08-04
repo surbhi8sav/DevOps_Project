@@ -1,0 +1,18 @@
+<div class="container">
+  <h1 style="text-align: center; color: rgb(246, 246, 40);">Registration Form</h1>
+  <form method="post" #surveyform="ngForm" (submit)="onSubmit(surveyform)">
+
+    <label for="name"><b>Name</b></label>
+    <input type="text"  name="name" placeholder="Your name here.." ngModel>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text"  name="email" placeholder="Your email here.." ngModel>
+
+
+    <label for="message"><b>Message</b></label>
+    <textarea id="message" name="message" placeholder="Write your message.." style="height:200px" ngModel></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
